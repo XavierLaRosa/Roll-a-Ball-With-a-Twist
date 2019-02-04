@@ -1,0 +1,24 @@
+Documentation by Xavier La Rosa
+--------------------------------
+
+- This is inspired from the Roll a Ball game with a bit of a twist wher there are two players involved. There is a green ball (Player 1) and red ball (player 2).
+- There are "gems" scattered across the playing field where each ball may collect. 
+- To win the game a player must have more points than the other.
+- To the left side you will say UI of player 1's gem count, timer starting at 120 seconds or 2 minutes.
+- To the middle you will see a UI restart button and a main menu button.
+- To the right you will see UI of player 2's gem count.
+- User may restart the game, setting position again or go to main menu.
+- To know when the game ends there is a method that checks using bool variables 
+	- this method activates when either the sum of both player's gem counts = 13 OR the time runs out to 0.00f
+	- this method compares scores of both classes (player scripts)
+	- this method then has 3 separate cases of player 1 wins, player 2 wins, or TIE.
+- The jump for each ball has been specified to give it a more "natural gamer jump" feel to it.
+	- this involed using an offset on the gravity of Vector3 which was pretty interesting to see how it can influence player jump
+- A Main Menu was added to satisfy the restart AND play buttons for the user. User may even quit the program.
+- 
+
+Acknowledged Errors
+-------------------------------
+- Before implementing player 2, the game was able to show when total gems are collected, restart would restart the count gem and the timer, restart would also set the positon to center correctly,
+- after implementing player 2 all those functions have been acting weird and I have tried my best to fix the errors before the deadline.
+- I also was not able to have independent keys for player 2, so the arrow keys influenced both players symmetrically.
